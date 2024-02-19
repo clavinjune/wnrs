@@ -1,0 +1,53 @@
+:root {
+	--main-color: #ff8fab;
+	--accent-color: #ffe5ec;
+}
+
+html, body {
+	background-color: var(--accent-color);
+	font-size: 16px;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.demo-card-event.mdl-card {
+	background: var(--main-color);
+	border-radius: 5px;
+	height: 50vh;
+	width: 95%;
+}
+.demo-card-event > .mdl-card__actions {
+	display: flex;
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.demo-card-event > .mdl-card__actions > a {
+	flex-grow: 1;
+}
+
+.demo-card-event > .mdl-card__title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: scroll;
+}
+.demo-card-event > .mdl-card__title > h4 {
+	max-height: 100%;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
