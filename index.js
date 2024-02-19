@@ -35,7 +35,7 @@ const loadStatus = () => {
 window.addEventListener('load', async () => {
 	let stack = localStorage.getItem('questions')
 	if (stack === null || stack === '[]') {
-		start()
+		await start()
 	}
 	loadNext()
 })
