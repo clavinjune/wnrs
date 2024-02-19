@@ -33,6 +33,7 @@ const loadStatus = () => {
 }
 
 window.addEventListener('load', async () => {
+	console.log('%c questions from https://github.com/munjoonteo/wnrs/', 'font-size:20px')
 	let stack = localStorage.getItem('questions')
 	if (stack === null || stack === '[]') {
 		await start()
